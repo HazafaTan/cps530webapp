@@ -4,12 +4,14 @@ import './../App.css';
 function Page6() {
   return (
     <div className="Page6">
-      <header className="Page6-header">
+      <header className="Page-header">
         <h1>
           References: {"\n"}
         </h1>
-        <h3> <a href = "https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign"> Sidebar Creation : https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign </a>  Pls Include this! -Max</h3>
-      </header>
+        </header>
+        <div className="Page6-body">
+          <p> <a href = "https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign"> Sidebar Creation : https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign </a>  Pls Include this! -Max</p>
+        </div>
     </div>
   );
 }

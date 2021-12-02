@@ -24,8 +24,8 @@ export default class BackDemo extends Component {
     render() {
         return (
             <div> 
-                <h2> Last visit date by anyone: {this.state.date}</h2>
-                <h2> Total amount of times visited: {this.state.counter} </h2>
+                <h2> Last visit date by anyone: </h2> <h2 style={{ color: '#61DBFB'}}> {this.state.date}</h2>
+                <h2> Total amount of times visited:</h2> <h2 style={{ color: '#61DBFB'}}> {this.state.counter}</h2>
             </div>
         )
     }

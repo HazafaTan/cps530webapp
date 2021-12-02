@@ -1,5 +1,8 @@
 import React from "react";
 import './../App.css';
+import Youtube from "./../components/Youtube";
+import Grid from '@mui/material/Grid'; 
+import {Container} from "@mui/material";
 
 function Page6() {
   return (
@@ -9,9 +12,16 @@ function Page6() {
           References: {"\n"}
         </h1>
         </header>
-        <div className="Page6-body">
-          <p> <a href = "https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign"> Sidebar Creation : https://www.youtube.com/watch?v=CXa0f4-dWi4&ab_channel=BrianDesign </a>  Pls Include this! -Max</p>
-        </div>
+        <Container>
+        <Grid container spacing={4}>
+          <Grid item xs={6}>
+          <Youtube embedId="CXa0f4-dWi4"/>
+          </Grid>
+          <Grid item xs={6}>
+            <div className = "textbox"> I used this video to help me understand how to create a sidebar and implement webpages with routing! -Max </div>
+          </Grid>
+        </Grid>
+        </Container>
     </div>
   );
 }

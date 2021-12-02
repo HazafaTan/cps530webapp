@@ -74,7 +74,6 @@ function Page1() {
             Technical Stack
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -91,10 +90,9 @@ function Page1() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Site Stats
+            Other
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
           </Typography>
         </CardContent>
       </CardActionArea>

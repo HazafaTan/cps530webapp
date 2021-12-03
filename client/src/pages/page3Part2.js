@@ -1,7 +1,7 @@
 import React from "react";
 import './../App.css';
-// Max Page
-function Page3() {
+ //Ham Page
+function Page3Part2() {
   return (
     <div className="Page3">
       <header className="Page-header">
@@ -13,4 +13,4 @@ function Page3() {
   );
 }
 
-export default Page3
+export default Page3Part2

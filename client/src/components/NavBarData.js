@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const NavbarData = [
     {
         title: 'Page 1 - Home',
@@ -14,6 +12,11 @@ export const NavbarData = [
     {
         title: 'Page 3',
         path: '/page3',
+        classname: 'nav-text'
+    },
+    {
+        title: 'Page 3 Part 2',
+        path: '/page3Part2',
         classname: 'nav-text'
     },
     {

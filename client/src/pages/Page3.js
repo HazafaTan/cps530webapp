@@ -1,10 +1,10 @@
 import React from "react";
 import './../App.css';
-
+// Max Page
 function Page3() {
   return (
     <div className="Page3">
-      <header className="Page3-header">
+      <header className="Page-header">
         <h1>
           CPS530 React and Express WebApp! {"\n"}
         </h1>

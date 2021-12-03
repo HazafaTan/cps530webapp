@@ -1,12 +1,12 @@
 import React from "react";
 import './../App.css';
-
+// Myo Page
 function Page5() {
   return (
-    <div className="Page5">
-      <header className="Page5-header">
+    <div className="App Page5">
+      <header className="Page-header">
         <h1>
-          CPS530 React and Express WebApp! {"\n"}
+          Conclusion {"\n"}
         </h1>
       </header>
     </div>

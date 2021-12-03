@@ -5,16 +5,13 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "npm install && node server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
+    "express": "^4.17.1",
     "body-parser": "*"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
   }
 }

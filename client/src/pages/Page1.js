@@ -9,7 +9,7 @@ function Page1() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          CPS530 React and Express WebApp! {"\n"}
+          CPS530 React and Express WebApp is Pog! {"\n"}
         </h1>
       <BackDemo/>
       </header>

@@ -15,6 +15,11 @@ export const NavbarData = [
         classname: 'nav-text'
     },
     {
+        title: 'Page 3 Part 2',
+        path: '/page3Part2',
+        classname: 'nav-text'
+    },
+    {
         title: 'Page 4',
         path: '/page4',
         classname: 'nav-text'

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const NavbarData = [
     {
         title: 'Page 1 - Home',

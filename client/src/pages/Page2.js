@@ -7,8 +7,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import BackDemo from "./../components/BackDemo"
+
 import Grid from '@mui/material/Grid'; 
 import './../page2.css';
 import mui from  './../MUI.png'
@@ -19,6 +18,10 @@ import express from './../express.png';
 
 const cardstyle = {
   backgroundColor: '#018786',
+  display: 'block',
+  width: '30vw',
+  transitionDuration: '0.3s',
+  height: '450px'
 };
 
 const card1 = (
@@ -96,7 +99,9 @@ export default function SimpleZoom() {
     height: "auto",
   };
   
-  return (
+  return (  
+  <html>
+     <style>{'body { background-color: #121212; }'}</style>
     <div className="Page2">
     <header className="Page2-header">
     <Grid
@@ -115,7 +120,6 @@ export default function SimpleZoom() {
     <Grid item xs={4}>        
     <img src={express} className="App-logo" alt="logo" style={image}  />
     </Grid>
-
 </Grid>
     <h2>
           How to install our Frameworks! {"\n"}
@@ -147,5 +151,6 @@ export default function SimpleZoom() {
     </Box>
     </header>
     </div>
+    </html>
   );
 }

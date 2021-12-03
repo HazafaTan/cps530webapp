@@ -1,10 +1,32 @@
 import React from "react";
+import logo from './../logo.svg';
+import BackDemo from "./../components/BackDemo"
 import './../App.css';
-// Tubbs Page
+import theme from "../theme";
+import {ThemeProvider} from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import Grid from '@mui/material/Grid'; 
+
+const image = {
+  width: "40%",
+  height: "auto",
+};
+
+const cardstyle = {
+  backgroundColor: '#018786',
+};
+
+
 function Page1() {
   return (
-    <div className="Page4">
-      <header className="Page-header">
+    <div className="App">
+      <header className="App-header">
+      <ThemeProvider theme= {theme}>
+        <img src={logo} className="App-logo" alt="logo" style={image}  />
         <h1>
           CPS530 React and Express WebApp! {"\n"}
         </h1>
@@ -79,8 +101,6 @@ function Page1() {
     </Grid>
     </Grid>
       </ThemeProvider>
-
-
       </header>
     </div>
   );

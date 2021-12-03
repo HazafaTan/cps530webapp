@@ -37,7 +37,6 @@ function Page1() {
               alignItems="center"
               spacing={2}
             >
-
         <Grid item xs={2}>
 
         <Card sx={{ maxWidth: 345 }} style={cardstyle}>

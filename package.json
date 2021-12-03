@@ -11,10 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express":"*",
-    "body-parser":"*",
-    "bcrypt": "^0.8.5"
- },
+    "express": "*",
+    "body-parser": "*"
+  },
   "devDependencies": {
     "nodemon": "^2.0.15"
   }

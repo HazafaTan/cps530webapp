@@ -1,9 +1,9 @@
 import React from "react";
 import './../App.css';
-// Tubbs Page
-function Page1() {
+ //Ham Page
+function Page3Part2() {
   return (
-    <div className="Page4">
+    <div className="Page3">
       <header className="Page-header">
         <h1>
           CPS530 React and Express WebApp! {"\n"}
@@ -13,4 +13,4 @@ function Page1() {
   );
 }
 
-export default Page1
+export default Page3Part2

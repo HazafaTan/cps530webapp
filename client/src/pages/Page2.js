@@ -1,6 +1,6 @@
 import React from "react";
 import './../App.css';
-
+// Ham Page
 function Page2() {
   return (
     <div className="Page2">

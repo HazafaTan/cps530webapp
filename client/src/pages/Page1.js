@@ -6,6 +6,9 @@ import Typography from '@mui/material/Typography';
 import ExpressJSgrph from './../ExpressJS-Users.svg';
 import ReactJSgrph from './../ReactJS-Users.svg';
 import MaterialUIgrph from './../Material-UI-Users.svg';
+import mui from  './../MUI.png'
+import logo from './../logo.svg';
+import express from './../express.png';
 import theme from "../theme";
 import { Container } from "@mui/material";
 import { Grid} from "@mui/material";
@@ -23,13 +26,12 @@ function Page1() {
       </header>
 
     <div>  
-      <h2>ReactJS</h2>
-
-    <Box sx={{flexGrow:0.5}}>
+    <Typography variant="h2">ReactJS</Typography>
+  
     <Grid container spacing={2} style={{minWidth:"1200px"}}>
 
       <Grid item sm={6}>
-        <img src={ReactJSgrph} className="React-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+        <img src={ReactJSgrph} className="React-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px", maxWidth:"md"}}/>
       </Grid>
       <Grid item sm={6}>
         <Grid container>
@@ -71,11 +73,10 @@ function Page1() {
       </Grid>
 
     </Grid>  
-    </Box>
     </div>
 
     <div>
-      <h2>Material-UI</h2>
+      <Typography variant="h2">Material-UI</Typography>
       <Box sx={{flexGrow:0.5}}>
     <Grid container spacing={2} style={{minWidth:"1200px"}}>
 
@@ -89,7 +90,7 @@ function Page1() {
         </Grid>
 
         <Grid item sm={8}>
-          <Rating defaultValue={5} readOnly size="medium"/> 
+          <Rating defaultValue={4.5} precision={0.5} readOnly size="medium"/> 
         </Grid>
         </Grid>
         <Grid container>
@@ -126,7 +127,7 @@ function Page1() {
     </div>
     
     <div>
-      <h2>ExpressJS</h2>
+      <Typography variant="h2">ExpressJS</Typography>
       <Box sx={{flexGrow:0.5}}>
     <Grid container spacing={2} style={{minWidth:"1200px"}}>
 

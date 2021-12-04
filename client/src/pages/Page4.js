@@ -1,6 +1,8 @@
 import React from "react";
 import logo from './../logo.svg';
 import BackDemo from "../components/BackDemo"
+import FrontDemo from "../components/FrontDemo"
+
 import './../App.css';
 import theme from "../theme";
 import {ThemeProvider} from '@mui/material/styles';
@@ -51,6 +53,9 @@ function Page4() {
               title: "Site Stats", 
               image: "https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif",
               body: (<BackDemo/>)})}
+          </Grid>
+          <Grid item xs={2}>
+            <FrontDemo/>
           </Grid>
           <Grid item xs={2}>
             {CustomCard({

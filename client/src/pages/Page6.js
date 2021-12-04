@@ -23,7 +23,11 @@ function Page6() {
           <img src='/linkedin.jpg' alt = "MaxPicture"/>
           </Grid>
           <Grid item xs={6}>
-          <div className="white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+          <div className="white underline"> Responsibilities </div>
+          <div className="white"> • Page 3 Part 1 and Page 6.</div>
+          <div className="white"> • Creating back end with Express.js and establishing communication with front-end. </div>
+          <div className="white"> • Creating the project structure and page routes to allow easy for collaboration </div>
+          <div className="white"> • Creating the Navigation Bar </div>
           </Grid>
           <Grid item xs={6}>
           <img src='/monkey.png' alt = "MaxPicture"/>

@@ -24,7 +24,7 @@ function arrayToUl (arr) {
 
 function Section({title, image, rating, pros, cons}) {
   return (
-    <div>  
+    <div key={title}>  
       <h2>{title}</h2>
       <Box sx={{flexGrow:0.5}}>
         <Grid container spacing={2} style={{minWidth:"1200px"}}>
@@ -72,55 +72,54 @@ function Page1() {
           CPS530 React, MaterialUI, and Express WebApp! {"\n"}
         </h1>
       </header>
-    
-      {Section({  
-        title: "ReactJS", 
-        image: ReactJSgrph, 
-        rating: 4, 
-        pros: [
-          "smells nice",
-          "tastes like soup",
-          "feels good"
-        ],
-        cons: [
-          "ngl this is stinky",
-          "les gooo",
-          "whooop"
-        ]
-      })}
-
-      {Section({  
-        title: "Material-UI", 
-        image: MaterialUIgrph, 
-        rating: 3, 
-        pros: [
-          "tastes like soup",
-          "smells nice",
-          "les gooo",
-        ],
-        cons: [
-          "ngl this is stinky",
-          "whooop",
-          "feels good",
-        ]
-      })}
-
-      {Section({  
-        title: "ExpressJS", 
-        image: ExpressJSgrph, 
-        rating: 2, 
-        pros: [
-          "ngl this is stinky",
-          "les gooo",
-          "whooop"
-
-        ],
-        cons: [
-          "smells nice",
-          "tastes like soup",
-          "feels good"
-        ]
-      })}
+      {[
+        {  
+          title: "ReactJS", 
+          image: ReactJSgrph, 
+          rating: 4, 
+          pros: [
+            "smells nice",
+            "tastes like soup",
+            "feels good"
+          ],
+          cons: [
+            "ngl this is stinky",
+            "les gooo",
+            "whooop"
+          ]
+        },
+        {  
+          title: "Material-UI", 
+          image: MaterialUIgrph, 
+          rating: 3, 
+          pros: [
+            "tastes like soup",
+            "smells nice",
+            "les gooo",
+          ],
+          cons: [
+            "ngl this is stinky",
+            "whooop",
+            "feels good",
+          ]
+        },
+        {  
+          title: "ExpressJS", 
+          image: ExpressJSgrph, 
+          rating: 2, 
+          pros: [
+            "ngl this is stinky",
+            "les gooo",
+            "whooop"
+  
+          ],
+          cons: [
+            "smells nice",
+            "tastes like soup",
+            "feels good"
+          ]
+        }
+      ].map(Section)}
     </div>
   );
   

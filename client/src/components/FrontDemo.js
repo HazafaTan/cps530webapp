@@ -36,11 +36,10 @@ export default class FrontDemo extends Component {
             img_url: default_img, 
             loading: false
         };
-        this.pop = (event) => {
+        this.updateSearch = debounce((event) => {
             this.setState({search_term: event.target.value});
             this.apiReq();
-        };
-        this.updateSearch = debounce(this.pop, 800);
+        }, 800);
     }
 
     apiReq() {

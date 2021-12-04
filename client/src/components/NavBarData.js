@@ -16,7 +16,7 @@ export const NavbarData = [
     },
     {
         title: 'Page 3 Part 2',
-        path: '/page3Part2',
+        path: '/Page3Part2',
         classname: 'nav-text'
     },
     {

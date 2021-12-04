@@ -1,109 +1,184 @@
 import React from "react";
-import logo from './../logo.svg';
-import BackDemo from "./../components/BackDemo"
 import './../App.css';
-import theme from "../theme";
-import {ThemeProvider} from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import Grid from '@mui/material/Grid'; 
+import ExpressJSgrph from './../ExpressJS-Users.svg';
+import ReactJSgrph from './../ReactJS-Users.svg';
+import MaterialUIgrph from './../Material-UI-Users.svg';
+import theme from "../theme";
+import { Container } from "@mui/material";
+import { Grid} from "@mui/material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 
-const image = {
-  width: "40%",
-  height: "auto",
-};
-
-const cardstyle = {
-  backgroundColor: '#018786',
-};
-
+// Tubbs Page
 
 function Page1() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <ThemeProvider theme= {theme}>
-        <img src={logo} className="App-logo" alt="logo" style={image}  />
+    <div className="Page1">
+      <header className="Page-header">
         <h1>
-          CPS530 React and Express WebApp! {"\n"}
+          CPS530 React, MaterialUI, and Express WebApp! {"\n"}
         </h1>
-        <Grid
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-            >
-        <Grid item xs={2}>
-
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Site Stats
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    <Grid item xs={2}>
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Technical Stack
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    <Grid item xs={2}>
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Site Stats
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    </Grid>
-      </ThemeProvider>
       </header>
+
+    <div>  
+      <h2>ReactJS</h2>
+
+    <Box sx={{flexGrow:0.5}}>
+    <Grid container spacing={2} style={{minWidth:"1200px"}}>
+
+      <Grid item sm={6}>
+        <img src={ReactJSgrph} className="React-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+      </Grid>
+      <Grid item sm={6}>
+        <Grid container>
+        <Grid item sm={4}>
+          <Typography variant="h5">Average User Rating:</Typography>
+        </Grid>
+
+        <Grid item sm={8}>
+          <Rating defaultValue={5} readOnly size="medium"/> 
+        </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item sm={4}>
+          <Typography variant="h5">Pros:</Typography>
+          </Grid>
+          <Grid item sm={8}>
+            <ul>
+              <li>Good point1</li>
+              <li>Good point1</li>
+              <li>Good point1</li>
+            </ul>
+          </Grid>
+        </Grid>
+
+        <Grid container>
+          <Grid item sm={4}>
+            <Typography variant="h5">Cons:</Typography>
+          </Grid>
+
+          <Grid item sm={8}>
+            <ul>
+              <li>Bad point</li>
+              <li>Bad point</li>
+              <li>Bad point</li>
+            </ul>
+          </Grid>
+        </Grid>
+  
+      </Grid>
+
+    </Grid>  
+    </Box>
+    </div>
+
+    <div>
+      <h2>Material-UI</h2>
+      <Box sx={{flexGrow:0.5}}>
+    <Grid container spacing={2} style={{minWidth:"1200px"}}>
+
+      <Grid item sm={6}>
+        <img src={MaterialUIgrph} className="MaterialUI-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+      </Grid>
+      <Grid item sm={6}>
+        <Grid container>
+        <Grid item sm={4}>
+          <Typography variant="h5">Average User Rating:</Typography>
+        </Grid>
+
+        <Grid item sm={8}>
+          <Rating defaultValue={5} readOnly size="medium"/> 
+        </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item sm={4}>
+          <Typography variant="h5">Pros:</Typography>
+          </Grid>
+          <Grid item sm={8}>
+            <ul>
+              <li>Good point1</li>
+              <li>Good point1</li>
+              <li>Good point1</li>
+            </ul>
+          </Grid>
+        </Grid>
+
+        <Grid container>
+          <Grid item sm={4}>
+            <Typography variant="h5">Cons:</Typography>
+          </Grid>
+
+          <Grid item sm={8}>
+            <ul>
+              <li>Bad point</li>
+              <li>Bad point</li>
+              <li>Bad point</li>
+            </ul>
+          </Grid>
+        </Grid>
+  
+      </Grid>
+
+    </Grid>  
+    </Box>
+    </div>
+    
+    <div>
+      <h2>ExpressJS</h2>
+      <Box sx={{flexGrow:0.5}}>
+    <Grid container spacing={2} style={{minWidth:"1200px"}}>
+
+      <Grid item sm={6}>
+        <img src={ExpressJSgrph} className="Express-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+      </Grid>
+      <Grid item sm={6}>
+        <Grid container>
+        <Grid item sm={4}>
+          <Typography variant="h5">Average User Rating:</Typography>
+        </Grid>
+
+        <Grid item sm={8}>
+          <Rating defaultValue={5} readOnly size="medium"/> 
+        </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item sm={4}>
+          <Typography variant="h5">Pros:</Typography>
+          </Grid>
+          <Grid item sm={8}>
+            <ul>
+              <li>Good point1</li>
+              <li>Good point1</li>
+              <li>Good point1</li>
+            </ul>
+          </Grid>
+        </Grid>
+
+        <Grid container>
+          <Grid item sm={4}>
+            <Typography variant="h5">Cons:</Typography>
+          </Grid>
+
+          <Grid item sm={8}>
+            <ul>
+              <li>Bad point</li>
+              <li>Bad point</li>
+              <li>Bad point</li>
+            </ul>
+          </Grid>
+        </Grid>
+  
+      </Grid>
+
+    </Grid>  
+    </Box>
+    </div>
+
     </div>
   );
+  
 }
 
 export default Page1

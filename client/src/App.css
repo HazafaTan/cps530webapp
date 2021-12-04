@@ -13,6 +13,14 @@
   }
 }
 
+.CenterHeader {
+  text-align: center;
+  color: white;
+  font-size: calc(20px + 2vmin);
+  text-decoration: underline;
+
+}
+
 .App-header {
   background-color: #121212;
   min-height: 100vh;
@@ -60,6 +68,11 @@
   background-color: #252525;
   border-radius: .50em;
 padding: 7px;
+}
+
+.white{
+  color: white;
+  text-align: center;
 }
 
 .videoWrapper {

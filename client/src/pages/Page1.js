@@ -1,5 +1,14 @@
 import React from "react";
 import './../App.css';
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import ExpressJSgrph from './../ExpressJS-Users.svg';
+import ReactJSgrph from './../ReactJS-Users.svg';
+import MaterialUIgrph from './../Material-UI-Users.svg';
+
+import { Grid} from "@mui/material";
+
 // Tubbs Page
 function Page1() {
   return (
@@ -78,7 +87,6 @@ function Page1() {
     </Card>
     </Grid>
     </Grid>
-      </ThemeProvider>
 
 
       </header>

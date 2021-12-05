@@ -15,11 +15,11 @@ export default class BackDemo extends Component {
                 + currentdate.getHours() + ":"  
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
-        axios.get('/db/show').then(response => {
+        axios.get('https://cps530server.herokuapp.com/db/show').then(response => {
             console.log(response.data)
             this.setState({counter : response.data.visit_counter, date : response.data.last_date})
         });
-        axios.get('/db/update?newdate=' + datetime)
+        axios.get('https://cps530server.herokuapp.com/db/update?newdate=' + datetime)
     }
     render() {
         return (

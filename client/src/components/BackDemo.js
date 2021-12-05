@@ -8,18 +8,11 @@ export default class BackDemo extends Component {
     }
 
     componentDidMount() {
-        var currentdate = new Date(); 
-        var datetime = currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear() + " @ "  
-                + currentdate.getHours() + ":"  
-                + currentdate.getMinutes() + ":" 
-                + currentdate.getSeconds();
         axios.get('https://cps530server.herokuapp.com/db/show').then(response => {
             console.log(response.data)
             this.setState({counter : response.data.visit_counter, date : response.data.last_date})
         });
-        axios.get('https://cps530server.herokuapp.com/db/update?newdate=' + datetime)
+        axios.get('https://cps530server.herokuapp.com/db/update')
     }
     render() {
         return (

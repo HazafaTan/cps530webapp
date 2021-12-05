@@ -110,7 +110,7 @@ function ConclusionCard({name, avatar, info}) {
 }
 
 
-function Page5() {
+export default function Page5() {
   return (
     <ThemeProvider theme= {darkTheme}>
       <Box m={2} pt={0}>
@@ -125,5 +125,3 @@ function Page5() {
     </ThemeProvider>
   );
 }
-
-export default Page5

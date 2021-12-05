@@ -106,3 +106,9 @@ padding: 7px;
   text-align: center;
 }
 
+.no-margin {
+  margin: 0;
+}
+.tiny-margin {
+  margin: 5px;
+}

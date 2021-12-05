@@ -4,7 +4,7 @@ import Youtube from "./../components/Youtube";
 import Grid from '@mui/material/Grid'; 
 import {Container} from "@mui/material";
 // Max Page
-function Page3() {
+export default function Page3() {
   return (
     <div className="Page3">
       <header className="Page-header">
@@ -56,5 +56,3 @@ function Page3() {
     </div>
   );
 }
-
-export default Page3

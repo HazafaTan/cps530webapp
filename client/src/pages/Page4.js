@@ -58,20 +58,6 @@ export default function Page4() {
           <Grid item xs={2}>
             <FrontDemo/>
           </Grid>
-          <Grid item xs={2}>
-            <CustomCard
-              title="Technical Stack"
-              image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-              body=""
-            />
-          </Grid>
-          <Grid item xs={2}>
-            <CustomCard
-              title="Other"
-              image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-              body=""
-            />
-          </Grid>
         </Grid>
       </ThemeProvider>
       </header>

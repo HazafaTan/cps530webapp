@@ -117,7 +117,6 @@ function Page1() {
         ],
         cons: [
           "Unhelpful error messages",
-          "tastes like soup"
         ]
       })}
 

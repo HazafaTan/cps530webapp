@@ -123,8 +123,7 @@ export default function SimpleZoom() {
                   },
                 ].map(item => (
                   <Grid key={item.title} item xs={4}>
-                    <br></br>
-                      {FrameworkCard(item)}
+                      <Zoom in={checked}>{FrameworkCard(item)}</Zoom>
                   </Grid>
                 ))}
               </Grid>

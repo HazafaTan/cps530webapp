@@ -26,7 +26,7 @@ const content_types = [
 
 const people = [
   {
-    name: "Ham BigPP", 
+    name: "Hazafa", 
     avatar: "https://cdn.discordapp.com/avatars/222865938771345408/81ac8a24cab22b4a5f551e4572351643.webp?size=1024", 
     info: {
       expectations: "I expected the frameworks to expedite the process of creating great looking and operating webpages.",
@@ -36,7 +36,7 @@ const people = [
     }
   },
   {
-    name: "Myo SmolPP", 
+    name: "Adshagan", 
     avatar: "https://cdn.discordapp.com/avatars/302565282373697537/40465c8c9b2b62929bc1f0ec51b4d301.webp?size=1024", 
     info: {
       expectations: "I expected the frameworks to expedite the process of creating great looking and operating webpages.",
@@ -46,17 +46,17 @@ const people = [
     }
   },
   {
-    name: "Tubs PP", 
+    name: "Maxim", 
     avatar: "https://cdn.discordapp.com/avatars/281621038771732481/a_285b970f9a423b4f4cfed1a115634e4e.gif?size=1024", 
     info: {
-      expectations: "I expected the frameworks to expedite the process of creating great looking and operating webpages.",
-      experience: "Having no prior JavaScript experience, I experienced a large learning curve when trying to work and understand the frameworks.",
-      "regrets/likes": "Despite the steep learning curve, I somewhat enjoyed learning certain aspects of ReactJS and Material-UI.",
-      overall: "Using ReactJS and Material-UI I was surprised to be able to create rather complex UI's in just a few lines of code. A regret that I have is not picking them up earlier."
+      expectations: "I expected the framework to allow me to create well organized code, and allow me to use libraries to assist the development process. I also expected a smooth process of communication between server-side express and React.",
+      experience: " I experienced a huge learning requirement in order to begin working, and it took me some time to organize the pages. I wrote code and tested with React's live edit updating, which allowed me to use a trial and error process to learn.",
+      "regrets/likes": "I liked learning React, as it has a vast variety of options available to developers. Connecting the back-end with the front-end was smooth, and using MaterialUI allowed me to create very clean designs which I enjoyed working with.",
+      overall: "I was able to make interactive UI's very easily with a vast amount of features available to me. I wish I had started using React sooner!"
     }
   },
   {
-    name: "Max penis", 
+    name: "James", 
     avatar: "https://cdn.discordapp.com/avatars/555085307431747584/5d2b23fdfd7add292f940f47fde6ab46.webp?size=1024", 
     info: {
       expectations: "I expected the frameworks to expedite the process of creating great looking and operating webpages.",

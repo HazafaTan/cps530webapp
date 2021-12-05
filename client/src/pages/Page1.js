@@ -14,8 +14,61 @@ import { Container } from "@mui/material";
 import { Grid} from "@mui/material";
 import { Card, CardContent, CardMedia } from "@mui/material";
 
-// Tubbs Page
+function arrayToUl (arr) {
+  return (
+    <ul>
+      {arr.map(e => (
+        <li key={e}>
+          {e}
+        </li>
+      ))}
+    </ul>
+  )};
 
+function Section({title, image, rating, pros, cons}) {
+  
+  return (
+    <div>  
+      <Typography variant="h2" color="white">{title}</Typography>
+      <Box sx={{flexGrow:0.5}}>
+        <Grid container spacing={2} style={{minWidth:"1200px"}}>
+          <Grid item sm={6}>
+            <img src={image} className="React-graph" alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+          </Grid>
+          <Grid item sm={6} className="textbox">
+            <Grid container>
+              <Grid item sm={4}>
+                <Typography variant="h5">Average User Rating:</Typography>
+              </Grid>
+              <Grid item sm={8}>
+                <Rating defaultValue={rating} readOnly size="medium"/> 
+              </Grid>
+            </Grid>
+            <Grid container>
+              <Grid item sm={4}>
+                <Typography variant="h5">Pros:</Typography>
+              </Grid>
+              <Grid item sm={8}>
+                {arrayToUl(pros)}
+              </Grid>
+            </Grid>
+            <Grid container>
+              <Grid item sm={4}>
+                <Typography variant="h5">Cons:</Typography>
+              </Grid>
+              <Grid item sm={8}>
+                {arrayToUl(cons)}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Box>
+
+    </div>
+  );
+}
+
+// Tubbs Page
 function Page1() {
   return (
     <div className="Page1">
@@ -24,159 +77,49 @@ function Page1() {
           CPS530 React, MaterialUI, and Express WebApp! {"\n"}
         </h1>
       </header>
-
-    <div>  
-    <Typography variant="h2">ReactJS</Typography>
-  
-    <Grid container spacing={2} style={{minWidth:"1200px"}}>
-
-      <Grid item sm={6}>
-        <img src={ReactJSgrph} className="React-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px", maxWidth:"md"}}/>
-      </Grid>
-      <Grid item sm={6}>
-        <Grid container>
-        <Grid item sm={4}>
-          <Typography variant="h5">Average User Rating:</Typography>
-        </Grid>
-
-        <Grid item sm={8}>
-          <Rating defaultValue={5} readOnly size="medium"/> 
-        </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item sm={4}>
-          <Typography variant="h5">Pros:</Typography>
-          </Grid>
-          <Grid item sm={8}>
-            <ul>
-              <li>Good point1</li>
-              <li>Good point1</li>
-              <li>Good point1</li>
-            </ul>
-          </Grid>
-        </Grid>
-
-        <Grid container>
-          <Grid item sm={4}>
-            <Typography variant="h5">Cons:</Typography>
-          </Grid>
-
-          <Grid item sm={8}>
-            <ul>
-              <li>Bad point</li>
-              <li>Bad point</li>
-              <li>Bad point</li>
-            </ul>
-          </Grid>
-        </Grid>
-  
-      </Grid>
-
-    </Grid>  
-    </div>
-
-    <div>
-      <Typography variant="h2">Material-UI</Typography>
-      <Box sx={{flexGrow:0.5}}>
-    <Grid container spacing={2} style={{minWidth:"1200px"}}>
-
-      <Grid item sm={6}>
-        <img src={MaterialUIgrph} className="MaterialUI-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
-      </Grid>
-      <Grid item sm={6}>
-        <Grid container>
-        <Grid item sm={4}>
-          <Typography variant="h5">Average User Rating:</Typography>
-        </Grid>
-
-        <Grid item sm={8}>
-          <Rating defaultValue={4.5} precision={0.5} readOnly size="medium"/> 
-        </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item sm={4}>
-          <Typography variant="h5">Pros:</Typography>
-          </Grid>
-          <Grid item sm={8}>
-            <ul>
-              <li>Good point1</li>
-              <li>Good point1</li>
-              <li>Good point1</li>
-            </ul>
-          </Grid>
-        </Grid>
-
-        <Grid container>
-          <Grid item sm={4}>
-            <Typography variant="h5">Cons:</Typography>
-          </Grid>
-
-          <Grid item sm={8}>
-            <ul>
-              <li>Bad point</li>
-              <li>Bad point</li>
-              <li>Bad point</li>
-            </ul>
-          </Grid>
-        </Grid>
-  
-      </Grid>
-
-    </Grid>  
-    </Box>
-    </div>
     
-    <div>
-      <Typography variant="h2">ExpressJS</Typography>
-      <Box sx={{flexGrow:0.5}}>
-    <Grid container spacing={2} style={{minWidth:"1200px"}}>
+      {Section({  
+        title: "ReactJS", 
+        image: ReactJSgrph, 
+        rating: 5, 
+        pros: [
+          "SEO friendly",
+          "Smooth and fast performance",
+          "High pace of development"
+        ],
+        cons: [
+          "High pace of development causes rushed documentation",
+          "Uses JSX which imposes a great learning curve"
+        ]
+      })}
 
-      <Grid item sm={6}>
-        <img src={ExpressJSgrph} className="Express-graph" alt="graph" style={{width:"100%",height:"auto",minWidth:"200px"}}/>
-      </Grid>
-      <Grid item sm={6}>
-        <Grid container>
-        <Grid item sm={4}>
-          <Typography variant="h5">Average User Rating:</Typography>
-        </Grid>
+      {Section({  
+        title: "Material-UI", 
+        image: MaterialUIgrph, 
+        rating: 4, 
+        pros: [
+          "Uses Google's Material Design",
+          "Promotes animation in designs",
+        ],
+        cons: [
+          "Offers relatively less variety of components compared to other libraries",
+        ]
+      })}
 
-        <Grid item sm={8}>
-          <Rating defaultValue={5} readOnly size="medium"/> 
-        </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item sm={4}>
-          <Typography variant="h5">Pros:</Typography>
-          </Grid>
-          <Grid item sm={8}>
-            <ul>
-              <li>Good point1</li>
-              <li>Good point1</li>
-              <li>Good point1</li>
-            </ul>
-          </Grid>
-        </Grid>
+      {Section({  
+        title: "ExpressJS", 
+        image: ExpressJSgrph, 
+        rating: 4, 
+        pros: [
+          "Flexible",
+          "Well documented"
 
-        <Grid container>
-          <Grid item sm={4}>
-            <Typography variant="h5">Cons:</Typography>
-          </Grid>
-
-          <Grid item sm={8}>
-            <ul>
-              <li>Bad point</li>
-              <li>Bad point</li>
-              <li>Bad point</li>
-            </ul>
-          </Grid>
-        </Grid>
-  
-      </Grid>
-
-    </Grid>  
-    </Box>
-    </div>
-
+        ],
+        cons: [
+          "Unhelpful error messages",
+          "tastes like soup"
+        ]
+      })}
     </div>
   );
   

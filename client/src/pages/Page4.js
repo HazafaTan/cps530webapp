@@ -8,7 +8,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid'; 
 
 const image = {
@@ -20,85 +19,52 @@ const cardstyle = {
   backgroundColor: '#018786',
 };
 
+function CustomCard({title, image, body}) {
+  return (
+    <Card sx={{ maxWidth: 345 }} style={cardstyle}>
+      <CardMedia component="img" height="140" image={image} alt={title}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {body}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
 
 function Page4() {
   return (
     <div className="App">
       <header className="App-header">
-      <ThemeProvider theme= {theme}>
+      <ThemeProvider theme={theme}>
         <img src={logo} className="App-logo" alt="logo" style={image}  />
         <h1>
           CPS530 React and Express WebApp! {"\n"}
         </h1>
-        <Grid
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-            >
-
-        <Grid item xs={2}>
-
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Site Stats
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          <BackDemo/>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    <Grid item xs={2}>
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Technical Stack
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    <Grid item xs={2}>
-        <Card sx={{ maxWidth: 345 }} style={cardstyle}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
-          alt="Cat Coding"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Other
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
-    </Grid>
+        <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}> 
+          <Grid item xs={2}>
+            {CustomCard({
+              title: "Site Stats", 
+              image: "https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif",
+              body: (<BackDemo/>)})}
+          </Grid>
+          <Grid item xs={2}>
+            {CustomCard({
+              title: "Technical Stack", 
+              image: "https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif",
+              body: ""})}
+          </Grid>
+          <Grid item xs={2}>
+            {CustomCard({
+              title: "Other", 
+              image: "https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif",
+              body: ""})}
+          </Grid>
+        </Grid>
       </ThemeProvider>
       </header>
     </div>

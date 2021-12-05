@@ -71,8 +71,8 @@
   color: white;
   font-size: calc(10px + 2vmin);
   background-color: #252525;
-  border-radius: .50em;
-padding: 7px;
+  border-radius: 0.5em;
+  padding: 7px;
 }
 
 .white{
@@ -96,6 +96,7 @@ padding: 7px;
   width: 100%;
   height: 100%;
 }
+
 
 .black-back{
   background-color: #202020;

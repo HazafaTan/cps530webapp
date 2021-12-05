@@ -30,6 +30,19 @@ function Reference({video_id, text}) {
   );
 }
 
+function Siteref({pic, name, link, text}) {
+  return (
+    <><Grid item xs={6}>
+      <a href = {link}>
+        <img src={pic} alt={name} width="500" height="300"/>
+      </a>
+    </Grid>
+    <Grid item xs={6}>
+      <div className="textbox">{text}</div>
+    </Grid></>
+  );
+}
+
 export default function Page6() {
   return (
     <div className="Page6">
@@ -44,8 +57,8 @@ export default function Page6() {
           </h1>
           <Grid container className="white" justifyContent="center" textAlign="center" spacing={4} direction="column" alignItems="center">
             <Person
-              name="Max Piorischin"
-              image="/linkedin.jpg"
+              name="Maxim Piorischin"
+              image="https://media.discordapp.net/attachments/833549338373521441/917159359883128832/IMG_7380.png?width=400&height=400"
               responsibilities={[
                 "Page 3 Part 1 and Page 6",
                 "Creating back end with Express.js and establishing communication with front-end.",
@@ -54,27 +67,27 @@ export default function Page6() {
               ]}
             />
             <Person
-                name="Monkey"
-                image="/monkey.png"
+                name="Hazafa"
+                image="https://media.discordapp.net/attachments/915746376611135491/917156621929578578/unknown.png?width=400&height=400"
                 responsibilities={[
-                  "literally did nothing",
-                  "where banana",
+                  "Page 3 Part 2 and Page 4",
+                  "Material UI usage"
               ]}
             />
             <Person
-                name="Monkey"
-                image="/monkey.png"
+                name="James"
+                image="https://media.discordapp.net/attachments/915746376611135491/917140089052749854/unknown.png"
                 responsibilities={[
-                  "literally did nothing",
-                  "where banana",
+                  "Page 1",
+                  "Project Research"
               ]}
             />
             <Person
-                name="Monkey"
-                image="/monkey.png"
+                name="Adshagan"
+                image="https://cdn.discordapp.com/avatars/302565282373697537/40465c8c9b2b62929bc1f0ec51b4d301.webp?size=240"
                 responsibilities={[
-                  "literally did nothing",
-                  "where banana",
+                  "Page 5",
+                  "Team data collection"
               ]}
             />
           </Grid>
@@ -84,6 +97,18 @@ export default function Page6() {
             References: {"\n"}
           </h1>
           <Grid container spacing={4}>
+              <Siteref
+                pic="https://reactjs.org/logo-og.png"
+                name="ReactPic"
+                text="The documentation for React, which helped us learn the full capabilities for the framework."
+                link="https://reactjs.org/docs/getting-started.html"
+                />
+              <Siteref
+                pic = "https://cdn-media-1.freecodecamp.org/images/1*FDNeKIUeUnf0XdqHmi7nsw.png"
+                name = "MaterialUI_Pic"
+                text="The documentation for Material UI, which helped us learn the full capabilities for the framework."
+                link = "https://mui.com/getting-started/usage/"
+                />
               <Reference
                 video_id="CXa0f4-dWi4"
                 text="I used this video to help me understand how to create a sidebar and implement webpages with routing! -Max"

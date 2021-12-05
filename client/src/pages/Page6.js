@@ -58,7 +58,7 @@ export default function Page6() {
           <Grid container className="white" justifyContent="center" textAlign="center" spacing={4} direction="column" alignItems="center">
             <Person
               name="Maxim Piorischin"
-              image="/linkedin.jpg"
+              image="https://media.discordapp.net/attachments/833549338373521441/917159359883128832/IMG_7380.png?width=400&height=400"
               responsibilities={[
                 "Page 3 Part 1 and Page 6",
                 "Creating back end with Express.js and establishing communication with front-end.",
@@ -68,7 +68,7 @@ export default function Page6() {
             />
             <Person
                 name="Hazafa"
-                image="https://cdn.discordapp.com/avatars/222865938771345408/81ac8a24cab22b4a5f551e4572351643.webp?size=1024"
+                image="https://media.discordapp.net/attachments/915746376611135491/917156621929578578/unknown.png?width=400&height=400"
                 responsibilities={[
                   "Page 3 Part 2 and Page 4",
                   "Material UI usage"

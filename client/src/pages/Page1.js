@@ -33,7 +33,7 @@ function Section({title, image, rating, pros, cons}) {
       <Box sx={{flexGrow:0.5}}>
         <Grid container spacing={2} style={{minWidth:"1200px"}}>
           <Grid item sm={6}>
-            <img src={image} className="React-graph" alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+            <img src={image} alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
           </Grid>
           <Grid item sm={6} className="textbox">
             <Grid container>
@@ -74,7 +74,7 @@ function Page1() {
     <div className="Page1">
       <header className="Page-header">
         <h1>
-          CPS530 React, MaterialUI, and Express WebApp! {"\n"}
+          Summary Snapshot Presentation{"\n"}
         </h1>
       </header>
     

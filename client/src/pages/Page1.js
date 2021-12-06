@@ -31,31 +31,31 @@ function Section({title, image, rating, pros, cons}) {
       <Typography variant="h2" color="white">{title}</Typography>
       <Box sx={{flexGrow:0.5}}>
         <Grid container spacing={2} style={{minWidth:"1200px"}}>
-          <Grid item sm={6}>
+          <Grid item md={6} xs = {12}>
             <img src={image} className="React-graph" alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
           </Grid>
-          <Grid item sm={6} className="textbox">
+          <Grid item md={6} xs = {12} className="textbox">
             <Grid container>
-              <Grid item sm={4}>
+              <Grid item md={4} xs = {12}>
                 <Typography variant="h5">Average User Rating:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 <Rating defaultValue={rating} readOnly size="medium"/> 
               </Grid>
             </Grid>
             <Grid container>
-              <Grid item sm={4}>
+              <Grid item md={4} xs = {12}>
                 <Typography variant="h5">Pros:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 {arrayToUl(pros)}
               </Grid>
             </Grid>
             <Grid container>
-              <Grid item sm={4}>
+              <Grid item md={4} xs = {12}> 
                 <Typography variant="h5">Cons:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 {arrayToUl(cons)}
               </Grid>
             </Grid>

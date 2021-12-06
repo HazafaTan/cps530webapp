@@ -68,7 +68,7 @@ export default function SimpleZoom() {
             spacing={0}
           > 
             {[logo, mui, express].map(l => (
-              <Grid item xs={4}>
+              <Grid item xs={12} md={4}>
                 <img src={l} className="App-logo" alt="logo" style={image}/>
               </Grid> 
             ))}

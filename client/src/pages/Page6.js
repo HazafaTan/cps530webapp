@@ -45,7 +45,7 @@ function Siteref({pic, name, link, text}) {
 
 export default function Page6() {
   return (
-    <div className="Page6">
+    <div className="grey-back">
       <header className="Page-header">
         <h1>
           Credits and References{"\n"}
@@ -67,7 +67,7 @@ export default function Page6() {
               ]}
             />
             <Person
-                name="Hazafa"
+                name="Hazafa Tanveer"
                 image="https://media.discordapp.net/attachments/915746376611135491/917156621929578578/unknown.png?width=400&height=400"
                 responsibilities={[
                   "Page 3 Part 2 and Page 4",
@@ -75,7 +75,7 @@ export default function Page6() {
               ]}
             />
             <Person
-                name="James"
+                name="James Tan"
                 image="https://media.discordapp.net/attachments/915746376611135491/917140089052749854/unknown.png"
                 responsibilities={[
                   "Page 1",
@@ -83,8 +83,8 @@ export default function Page6() {
               ]}
             />
             <Person
-                name="Adshagan"
-                image="https://cdn.discordapp.com/avatars/302565282373697537/40465c8c9b2b62929bc1f0ec51b4d301.webp?size=240"
+                name="Adshagan Nanthakumar"
+                image="https://media.discordapp.net/attachments/915746376611135491/917227122744000542/unknown.png?width=400&height=400"
                 responsibilities={[
                   "Page 5",
                   "Team data collection"
@@ -120,6 +120,14 @@ export default function Page6() {
               <Reference
                 video_id="SccSCuHhOw0"
                 text="This video allowed me to set up an Express.js server, and using endpoints to obtain information - Max"
+              />
+              <Reference
+                video_id="vyJU9efvUtQ"
+                text="Very thorough and expansive Material UI tutorial. Many different functions and code designs were shared. Numerous tutorials on design layout, inputs, and data display. - Adshagan"
+              />
+              <Reference
+                video_id="Ke90Tje7VS0"
+                text="This was a great introductory video to React that helped use basic React syntax to complete various functions. Super useful in learning basic React code design and applying it to our own site. - Adshagan"
               />
           </Grid>
         </Container>

@@ -69,7 +69,7 @@ function Section({title, image, rating, pros, cons}) {
 // Tubbs Page
 export default function Page1() {
   return (
-    <div className="Page1">
+    <div className="grey-back">
       <header className="Page-header">
         <h1>
           CPS530 React, MaterialUI, and Express WebApp! {"\n"}

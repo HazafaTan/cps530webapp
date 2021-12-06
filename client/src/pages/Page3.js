@@ -6,7 +6,7 @@ import {Container} from "@mui/material";
 // Max Page
 export default function Page3() {
   return (
-    <div className="Page3">
+    <div className="grey-back">
       <header className="Page-header">
         <h1>
           Creating a great page - Express.js Back-End {"\n"}

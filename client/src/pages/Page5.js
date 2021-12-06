@@ -26,10 +26,6 @@ const darkTheme = createTheme({
   },
 });
 
-const cardstyle = {
-  backgroundColor: '#6c0fb8',
-};
-
 
 const content_types = [
   "expectations", "experience", "regrets/likes"
@@ -85,20 +81,20 @@ function CardButton(key, hook) {
     <Button variant="text" size="small" sx={{typography: 'body3', fontWeight: 'bold'}} key={key} onClick={()=>{hook(key)}}>{cap(key)}</Button>
   );
 }
-function ConclusionCard({name, avatar, info}) {
+function ConclusionCard({names, avatar, info}) {
   const [content, setContent] = useState("expectations");
   return (
       <Card sx={{ maxWidth: 500, minHeight: 400 }} style={{justifyContent:'space-between', display: 'flex', flexDirection: 'column'}}>
         <div>
           <CardHeader
             avatar={
-              <Avatar sx={{ width: 56, height: 56 }} alt={name} aria-label="person" src={avatar}>
-                {name}
+              <Avatar sx={{ width: 56, height: 56 }} alt={names} aria-label="person" src={avatar}>
+                {names}
               </Avatar>
             }
             titleTypographyProps={{variant:'h4' }}
             title={cap(content)}
-            subheader={name}
+            subheader={names}
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
@@ -117,16 +113,18 @@ function ConclusionCard({name, avatar, info}) {
 
 export default function Page5() {
   return (
+    <div className="grey-back">
     <ThemeProvider theme= {darkTheme}>
       <Box m={2} pt={0}>
         <Grid container direction="row" spacing={2} alignItems="center" justify="center">
           {people.map(person => (
-            <Grid item sx={6} md={3} key={person.name}>
+            <Grid item sx={6} md={3} key={person.names}>
               {ConclusionCard(person)}
             </Grid>
           ))}
         </Grid>
       </Box>
     </ThemeProvider>
+    </div>
   );
 }

@@ -48,14 +48,14 @@ export default function Page4() {
           CPS530 React and Express WebApp! {"\n"}
         </h1>
         <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}> 
-          <Grid item xs={2}>
+          <Grid item md = {2} xs = {12} align= "center">
             <CustomCard
               title="Site Stats"
               image="https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif"
               body={(<BackDemo/>)}
             />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item md={2} xs = {12} align= "center">
             <FrontDemo/>
           </Grid>
         </Grid>

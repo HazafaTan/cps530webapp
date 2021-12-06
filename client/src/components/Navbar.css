@@ -4,7 +4,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
   }
   
   .menu-bars {
@@ -25,7 +24,13 @@
     left: -100%;
     transition: 550ms;
     z-index: 2;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
 
+  .nav-menu::-webkit-scrollbar {
+    display: none;
   }
   
   .nav-menu.on {

@@ -63,7 +63,8 @@ export default function Page6() {
                 "Page 3 Part 1 and Page 6",
                 "Creating back end with Express.js and establishing communication with front-end.",
                 "Creating the project structure and page routes to allow easy for collaboration",
-                "Creating the Navigation Bar"
+                "Creating the Navigation Bar",
+                "Making Code Responsive"
               ]}
             />
             <Person
@@ -71,7 +72,8 @@ export default function Page6() {
                 image="https://media.discordapp.net/attachments/915746376611135491/917156621929578578/unknown.png?width=400&height=400"
                 responsibilities={[
                   "Page 3 Part 2 and Page 4",
-                  "Material UI usage"
+                  "Material UI usage",
+                  "Adding Responsiveness to code"
               ]}
             />
             <Person

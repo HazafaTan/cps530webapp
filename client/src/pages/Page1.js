@@ -32,12 +32,12 @@ function Section({title, image, rating, pros, cons}) {
           <Grid item sm={6} mb={5} pr={5}>
             <img src={image} alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
           </Grid>
-          <Grid item sm={6} className="textbox">
+          <Grid item md={6} xs = {12} className="textbox">
             <Grid container>
               <Grid item sm={4}>
                 <Typography variant="h5" textAlign="center">Average User Rating:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 <Rating defaultValue={rating} readOnly size="medium"/> 
               </Grid>
             </Grid>
@@ -45,7 +45,7 @@ function Section({title, image, rating, pros, cons}) {
               <Grid item sm={4}>
                 <Typography variant="h5" textAlign="center">Pros:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 {arrayToUl(pros)}
               </Grid>
             </Grid>
@@ -53,7 +53,7 @@ function Section({title, image, rating, pros, cons}) {
               <Grid item sm={4}>
                 <Typography variant="h5" textAlign="center">Cons:</Typography>
               </Grid>
-              <Grid item sm={8}>
+              <Grid item md={8} xs = {12}>
                 {arrayToUl(cons)}
               </Grid>
             </Grid>

@@ -9,10 +9,8 @@ import MaterialUIgrph from './../Material-UI-Users.svg';
 import mui from  './../MUI.png'
 import logo from './../logo.svg';
 import express from './../express.png';
-import theme from "../theme";
-import { Container } from "@mui/material";
-import { Grid} from "@mui/material";
-import { Card, CardContent, CardMedia } from "@mui/material";
+import { Container, Grid } from "@mui/material";
+
 
 function arrayToUl (arr) {
   return (
@@ -28,16 +26,16 @@ function arrayToUl (arr) {
 function Section({title, image, rating, pros, cons}) {
   return (
     <div>  
-      <Typography variant="h2" color="white">{title}</Typography>
       <Box sx={{flexGrow:0.5}}>
+      <Typography variant="h2" color="white" ml={16}>{title}</Typography>
         <Grid container spacing={2} style={{minWidth:"1200px"}}>
-          <Grid item sm={6}>
+          <Grid item sm={6} mb={5} pr={5}>
             <img src={image} alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
           </Grid>
           <Grid item sm={6} className="textbox">
             <Grid container>
               <Grid item sm={4}>
-                <Typography variant="h5">Average User Rating:</Typography>
+                <Typography variant="h5" textAlign="center">Average User Rating:</Typography>
               </Grid>
               <Grid item sm={8}>
                 <Rating defaultValue={rating} readOnly size="medium"/> 
@@ -45,7 +43,7 @@ function Section({title, image, rating, pros, cons}) {
             </Grid>
             <Grid container>
               <Grid item sm={4}>
-                <Typography variant="h5">Pros:</Typography>
+                <Typography variant="h5" textAlign="center">Pros:</Typography>
               </Grid>
               <Grid item sm={8}>
                 {arrayToUl(pros)}
@@ -53,7 +51,7 @@ function Section({title, image, rating, pros, cons}) {
             </Grid>
             <Grid container>
               <Grid item sm={4}>
-                <Typography variant="h5">Cons:</Typography>
+                <Typography variant="h5" textAlign="center">Cons:</Typography>
               </Grid>
               <Grid item sm={8}>
                 {arrayToUl(cons)}

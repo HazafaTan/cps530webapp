@@ -96,7 +96,7 @@ export default function Page6() {
               an extra framework was used and showcased to compensate for the fact.
               That extra framework was MaterialUI. 
               Despite there only being one demo page, all three frameworks were used in its creation.
-              Furthermore, throughout most of the web-app the two front-end frameworks were used in conjunction
+              Furthermore, throughout the entirety of the web-app the two front-end frameworks were used in conjunction
               with one another.
             </Typography>
           </Grid>

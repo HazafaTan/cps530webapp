@@ -82,14 +82,14 @@ function FrameworkCard({title, image, alt, body}) {
                       </>)
                   },
                 ].map(item => (
-                  <Grid key={item.title} item xs={4}>
+                  <Grid key={item.title} item xs={12} md={4}>
                       {FrameworkCard(item)}
                   </Grid>
 
 
                 ))}
         
-    <Grid item xs={4}>
+    <Grid item md={4} sm={12}>
         </Grid>
         </Grid>
       </header>

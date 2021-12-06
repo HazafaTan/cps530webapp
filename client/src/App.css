@@ -13,6 +13,14 @@
   }
 }
 
+.CenterHeader {
+  text-align: center;
+  color: white;
+  font-size: calc(20px + 2vmin);
+  text-decoration: underline;
+
+}
+
 .App-header {
   background-color: #121212;
   min-height: 100vh;
@@ -63,8 +71,17 @@
   color: white;
   font-size: calc(10px + 2vmin);
   background-color: #252525;
-  border-radius: .50em;
-padding: 7px;
+  border-radius: 0.5em;
+  padding: 7px;
+}
+
+.white{
+  color: white;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .videoWrapper {
@@ -80,3 +97,19 @@ padding: 7px;
   height: 100%;
 }
 
+
+.black-back{
+  background-color: #202020;
+}
+
+.reg-text {
+  white-space: pre-line;
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+.tiny-margin {
+  margin: 5px;
+}

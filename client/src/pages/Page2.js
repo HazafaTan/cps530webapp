@@ -117,15 +117,14 @@ export default function SimpleZoom() {
                     alt: "Express Logo",
                     body: (<>
                         1. Open up your terminal and cd into your project directory<br></br>
-                        2. Install with npm using the following command: npm install @mui/material @emotion/react @emotion/styled<br></br>
-                        3. At the top of your js file make sure you import Material ui components that you need (refer to the docs)<br></br> 
+                        2. Install with npm using the following command: npm install express<br></br>
+                        3. At the top of your js file make sure you import Express by using require('express')<br></br> 
                       </>)
                   },
                 ].map(item => (
                   <Grid key={item.title} item xs={4}>
-                    <Zoom in={checked}>
+                    <br></br>
                       {FrameworkCard(item)}
-                    </Zoom>
                   </Grid>
                 ))}
               </Grid>

@@ -13,6 +13,7 @@ function Navbar() {
                 <Link to="#" className='menu-bars'>
                     <Icons.FaBars onClick={showNavbar}/>
                 </Link>
+                <div className="navtoptext"> CPS530 Express, React, and Material UI Web App </div>
             </div>
             <nav className={Navbar ? 'nav-menu on' : 'nav-menu'}>
                 <ul className='nav-menu-items' onClick={showNavbar}>

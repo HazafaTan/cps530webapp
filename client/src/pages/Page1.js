@@ -26,7 +26,6 @@ function arrayToUl (arr) {
   )};
 
 function Section({title, image, rating, pros, cons}) {
-  
   return (
     <div>  
       <Typography variant="h2" color="white">{title}</Typography>
@@ -63,13 +62,12 @@ function Section({title, image, rating, pros, cons}) {
           </Grid>
         </Grid>
       </Box>
-
     </div>
   );
 }
 
 // Tubbs Page
-function Page1() {
+export default function Page1() {
   return (
     <div className="Page1">
       <header className="Page-header">
@@ -77,52 +75,44 @@ function Page1() {
           Summary Snapshot Presentation{"\n"}
         </h1>
       </header>
-    
-      {Section({  
-        title: "ReactJS", 
-        image: ReactJSgrph, 
-        rating: 5, 
-        pros: [
+      <Section
+        title="ReactJS"
+        image={ReactJSgrph}
+        rating={5}
+        pros={[
           "SEO friendly",
           "Smooth and fast performance",
           "High pace of development"
-        ],
-        cons: [
+        ]}
+        cons={[
           "High pace of development causes rushed documentation",
           "Uses JSX which imposes a great learning curve"
-        ]
-      })}
-
-      {Section({  
-        title: "Material-UI", 
-        image: MaterialUIgrph, 
-        rating: 4, 
-        pros: [
+        ]}
+      />
+      <Section
+        title="Material-UI"
+        image={MaterialUIgrph}
+        rating={4}
+        pros={[
           "Uses Google's Material Design",
           "Promotes animation in designs",
-        ],
-        cons: [
+        ]}
+        cons={[
           "Offers relatively less variety of components compared to other libraries",
-        ]
-      })}
-
-      {Section({  
-        title: "ExpressJS", 
-        image: ExpressJSgrph, 
-        rating: 4, 
-        pros: [
+        ]}
+      />
+      <Section
+        title="ExpressJS"
+        image={ExpressJSgrph}
+        rating={4}
+        pros={[
           "Flexible",
           "Well documented"
-
-        ],
-        cons: [
+        ]}
+        cons={[
           "Unhelpful error messages",
-        ]
-      })}
-
+        ]}
+      />
     </div>
-  );
-  
+  ); 
 }
-
-export default Page1

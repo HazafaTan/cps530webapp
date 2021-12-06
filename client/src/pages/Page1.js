@@ -9,10 +9,8 @@ import MaterialUIgrph from './../Material-UI-Users.svg';
 import mui from  './../MUI.png'
 import logo from './../logo.svg';
 import express from './../express.png';
-import theme from "../theme";
-import { Container } from "@mui/material";
-import { Grid} from "@mui/material";
-import { Card, CardContent, CardMedia } from "@mui/material";
+import { Container, Grid } from "@mui/material";
+
 
 function arrayToUl (arr) {
   return (
@@ -28,32 +26,32 @@ function arrayToUl (arr) {
 function Section({title, image, rating, pros, cons}) {
   return (
     <div>  
-      <Typography variant="h2" color="white">{title}</Typography>
       <Box sx={{flexGrow:0.5}}>
+      <Typography variant="h2" color="white" ml={16}>{title}</Typography>
         <Grid container spacing={2} style={{minWidth:"1200px"}}>
-          <Grid item md={6} xs = {12}>
-            <img src={image} className="React-graph" alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
+          <Grid item sm={6} mb={5} pr={5}>
+            <img src={image} alt={`${title} graph`} style={{width:"100%",height:"auto",minWidth:"200px"}}/>
           </Grid>
           <Grid item md={6} xs = {12} className="textbox">
             <Grid container>
-              <Grid item md={4} xs = {12}>
-                <Typography variant="h5">Average User Rating:</Typography>
+              <Grid item sm={4}>
+                <Typography variant="h5" textAlign="center">Average User Rating:</Typography>
               </Grid>
               <Grid item md={8} xs = {12}>
                 <Rating defaultValue={rating} readOnly size="medium"/> 
               </Grid>
             </Grid>
             <Grid container>
-              <Grid item md={4} xs = {12}>
-                <Typography variant="h5">Pros:</Typography>
+              <Grid item sm={4}>
+                <Typography variant="h5" textAlign="center">Pros:</Typography>
               </Grid>
               <Grid item md={8} xs = {12}>
                 {arrayToUl(pros)}
               </Grid>
             </Grid>
             <Grid container>
-              <Grid item md={4} xs = {12}> 
-                <Typography variant="h5">Cons:</Typography>
+              <Grid item sm={4}>
+                <Typography variant="h5" textAlign="center">Cons:</Typography>
               </Grid>
               <Grid item md={8} xs = {12}>
                 {arrayToUl(cons)}
@@ -72,7 +70,7 @@ export default function Page1() {
     <div className="grey-back">
       <header className="Page-header">
         <h1>
-          CPS530 React, MaterialUI, and Express WebApp! {"\n"}
+          Summary Snapshot Presentation{"\n"}
         </h1>
       </header>
       <Section

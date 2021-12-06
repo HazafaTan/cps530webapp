@@ -2,7 +2,7 @@ import React from "react";
 import './../App.css';
 import Youtube from "./../components/Youtube";
 import Grid from '@mui/material/Grid'; 
-import {Container} from "@mui/material";
+import {Container, Typography} from "@mui/material";
 //import maxpic from "/linkedin.jpg"
 //import monkey from '/monkey.png'
 // Max Page
@@ -79,7 +79,8 @@ export default function Page6() {
                 image="https://media.discordapp.net/attachments/915746376611135491/917140089052749854/unknown.png"
                 responsibilities={[
                   "Page 1",
-                  "Project Research"
+                  "Project Research",
+                  "Contributed to Page 6"
               ]}
             />
             <Person
@@ -90,6 +91,14 @@ export default function Page6() {
                   "Team data collection"
               ]}
             />
+            <Typography className="textbox">
+              Note: As a result of the group being of size 4 instead of 3,
+              an extra framework was used and showcased to compensate for the fact.
+              That extra framework was MaterialUI. 
+              Despite there only being one demo page, all three frameworks were used in its creation.
+              Furthermore, throughout the entirety of the web-app the two front-end frameworks were used in conjunction
+              with one another.
+            </Typography>
           </Grid>
         </Container>
         <Container>

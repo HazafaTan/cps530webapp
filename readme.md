@@ -1,5 +1,5 @@
 # CPS 530 WebApp using React.js and Express.js
-## Created by Maxim Piorischin, Hazafa Tanveer (Add your names here)
+## Created by Maxim Piorischin, Hazafa Tanveer, James Tan, Adi
 
 Client -> React
 
